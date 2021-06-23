@@ -65,11 +65,6 @@ class CreateBarang extends Component
     public function edit($id)
     {
         $record = Barang::findOrFail($id);
-        $this->selected_id = $id;
-        $this->nama_barang = $record->nim;
-        $this->jumlah_barang = $record->nama;
-        $this->alamat = $record->alamat;
-
         $this->nama_barang = $record->nama_barang;
         $this->jumlah_barang = $record->jumlah_barang;
         $this->tgl_masuk = $record->tgl_masuk;
@@ -84,7 +79,7 @@ class CreateBarang extends Component
     public function update()
     {
         $this->validate([
-            'jumlah_barang' => 'required',
+            'nama_barang' => 'required',
             'jumlah_barang' => 'required',
             'tgl_masuk' => 'required',
             'tgl_kadaluarsa' => 'required',
@@ -95,7 +90,7 @@ class CreateBarang extends Component
         if ($this->selected_id) {
             $record = Barang::find($this->selected_id);
             $record->update([
-                'jumlah_barang' => $this->jumlah_barang,
+                'nama_barang' => $this->nama_barang,
                 'jumlah_barang' => $this->jumlah_barang,
                 'tgl_masuk' => $this->tgl_masuk,
                 'tgl_kadaluarsa' => $this->tgl_kadaluarsa,
