@@ -75,7 +75,7 @@ class CreateBarang extends Component
         $this->tgl_masuk = $record->tgl_masuk;
         $this->tgl_kadaluarsa = $record->tgl_kadaluarsa;
         $this->harga = $record->harga;
-        $this->kategor = $record->kategor;
+        $this->kategori = $record->kategori;
 
         $this->updateMode = true;
         $this->openModal();
