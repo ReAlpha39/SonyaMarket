@@ -45,6 +45,18 @@
                                     class="px-8 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                                     Tanggal Masuk
                                 </th>
+                                <th scope="col"
+                                    class="px-8 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                    Tanggal Kadaluarsa
+                                </th>
+                                <th scope="col"
+                                    class="px-8 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                    Harga
+                                </th>
+                                <th scope="col"
+                                    class="px-8 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                    Kategori
+                                </th>
                                 <th scope="col" class="relative px-6 py-3">
                                     <span class="sr-only">Edit</span>
                                 </th>
@@ -66,6 +78,21 @@
                                     <td class="px-8 py-4 whitespace-nowrap">
                                         <div class="text-sm text-gray-900">
                                             {{ $row->tgl_masuk }}
+                                        </div>
+                                    </td>
+                                    <td class="px-8 py-4 whitespace-nowrap">
+                                        <div class="text-sm text-gray-900">
+                                            {{ $row->tgl_kadaluarsa }}
+                                        </div>
+                                    </td>
+                                    <td class="px-8 py-4 whitespace-nowrap">
+                                        <div class="text-sm text-gray-900">
+                                            {{ $row->harga }}
+                                        </div>
+                                    </td>
+                                    <td class="px-8 py-4 whitespace-nowrap">
+                                        <div class="text-sm text-gray-900">
+                                            {{ $row->kategori }}
                                         </div>
                                     </td>
                                     <td class="py-2 whitespace-nowrap">

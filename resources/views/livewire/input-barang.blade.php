@@ -30,6 +30,27 @@
                                     <input wire:model="tgl_masuk" type="text" name="tgl_masuk" id="tgl_masuk" autocomplete="tgl_masuk"
                                         class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
                                 </div>
+                                <div class="col-span-6 sm:col-span-3">
+                                    <label for="tgl_kadaluarsa" class="block text-sm font-medium text-gray-700">
+                                        Tanggal Kadaluarsa
+                                    </label>
+                                    <input wire:model="tgl_kadaluarsa" type="text" name="tgl_kadaluarsa" id="tgl_kadaluarsa" autocomplete="tgl_kadaluarsa"
+                                        class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                </div>
+                                <div class="col-span-6 sm:col-span-3">
+                                    <label for="harga" class="block text-sm font-medium text-gray-700">
+                                        Harga
+                                    </label>
+                                    <input wire:model="harga" type="text" name="harga" id="harga" autocomplete="harga"
+                                        class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                </div>
+                                <div class="col-span-6 sm:col-span-3">
+                                    <label for="kategori" class="block text-sm font-medium text-gray-700">
+                                        Kategori
+                                    </label>
+                                    <input wire:model="kategori" type="text" name="kategori" id="kategori" autocomplete="kategori"
+                                        class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                </div>
                             </div>
                         </div>
                         <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
