@@ -65,6 +65,7 @@ class CreateBarang extends Component
     public function edit($id)
     {
         $record = Barang::findOrFail($id);
+        $this->selected_id = $id;
         $this->nama_barang = $record->nama_barang;
         $this->jumlah_barang = $record->jumlah_barang;
         $this->tgl_masuk = $record->tgl_masuk;
